@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body{
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+html{
+   min-height: 100%;
+}
+
+body{
+    
+    background-image: url("fondo.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center center;
+    overflow-x:hidden;
+    background-size: cover;
+
+}
+.titulo {
+    color: white;
+    text-shadow:0 0 20px black;
+    
+    font-size: 80px;
+    width: 500px;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.subtitulo{
+
+    color: white;
+    text-shadow:0 0 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    
+    
+
+}
+
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarjeta-de-mokepon:hover {
+    
+  background: rgb(240, 217, 124, 0.65);
+
+  color: black;
+  padding: 30px; 
+}
+
+input:checked + label{
+
+    background: #DAF7A6;
+    color: black;
+    
+}
+
+.tarjetas{
+    display:flex;
+}
+
+
+.tarjeta-de-mokepon {
+
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 210px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 9px;
+    border: 1px solid black;
+    border-radius: 10px  ;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 0 20px black;
+     
+}
+
+.tarjeta-de-mokepon img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;  
+}
+input{
+    display:none ;
+}
+
+#boton-mascota {
+    background-color: rgb(255, 195, 0,0.5);
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    color: black;
+    font-family: 'Fredoka One';
+    font-size: 15px;
+    margin-top: 5px;
+    box-shadow: 0 0 20px black;
+}
+
+#boton-mascota:hover{
+    background: rgb(218, 247, 166, 0.5);
+    opacity:0.8;
+    color: black;   
+}
+
+#boton-mascota:active{
+    background : greenyellow;
+    
+}
+
+
+
+
+
+ #seleccionar-ataque{
+
+    
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .boton-de-ataque {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    font-family: 'Fredoka One';
+    margin:5px;
+    padding: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px black;
+ }
+
+ .boton-de-ataque:hover{
+
+    background: rgb(240, 217, 124,0.5);
+    
+    color: black;
+    padding: 10px; 
+ }
+
+ .boton-de-ataque:active{
+    background-color: #FFC300;
+    padding: 10px;
+
+ }
+ 
+
+.boton-de-ataque:disabled {
+    background: rgb(128, 128, 128,0.5);
+}
+
+
+
+ #mensajes{
+    
+    background: rgb(218, 247, 166,0.5);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 1px;
+    
+    box-shadow: 0 0 20px black;
+    
+   
+ }
+
+ .ataques{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-items: center;
+
+    background:rgba(240, 217, 124,0.5);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 1px;
+    
+    margin-top: 15px;
+    box-shadow: 0 0 20px black;
+    
+    
+ }
+
+ #pelea{
+    margin-bottom: 5px;
+ }
+
+ #jugador{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ }
+ 
+ #enemigo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ }
+
+ #vidas-jugador{
+    font-size: 40px;
+ }
+
+ #vidas-enemigo{
+    font-size: 40px;
+ }
+ #mascota-enemigo{
+    font-size: 25px;
+    margin: 0px;
+ }
+#mascota-jugador{
+    font-size: 25px;
+    margin: 0px;
+}
+
+#nj{
+    margin: 0px;
+}
+
+#ne{
+    margin: 0px;
+}
+
+ #boton-reiniciar{
+    background: rgb(255, 255, 255,0.5);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: 'Fredoka One';
+    height: 40px;
+    width: 110px;
+    margin-top: 10px;
+ }
+
+ #boton-reiniciar:hover{
+    background: rgb(240, 217, 124,0.5);
+    
+    color: black;
+    
+}
+
+#boton-reiniciar:active{
+    background-color: rgb(255, 195, 0,0.5);
+
+}
+
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#mapa{
+    
+    box-shadow: 0 0 30px black;
+    
+}
+
+.tituloM{
+    color: white;
+    text-shadow: 0 0 30px black;
+    font-size: 40px;
+    width: 800px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+#ver-mapa button{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    color: black;
+    font-family: 'Fredoka One';
+    font-size: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+#ver-mapa button:hover{
+    background: rgb(240, 217, 124,0.5);
+}
+
+#ver-mapa button:active{
+    background-color: rgb(255, 195, 0,0.5);
+}
+@media (max-width: 450px){
+
+.tarjetas {
+    flex-direction: column;
+
+}
+.titulo{
+    font-size: 60px;
+}
+
+.subtitulo{
+    font-size: 38px;
+}
+.boton-de-ataque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#resultado-definitivo{
+    font-size: 23px;
+}
+#resultado{
+    font-size: 13px;
+}
+.ataques{
+    grid-template-columns: 150px 150px;
+}
+
+.tituloM{
+    font-size: 24px;
+}
+#mapa{
+    height: 234px;
+    width: 400px;
+}
+}
